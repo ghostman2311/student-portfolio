@@ -1,0 +1,62 @@
+.hangmanContainer {
+  width: 100%;
+  margin: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.hangmanContainer h1 {
+ font-size: 40px;
+}
+
+.optionContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading{
+  font-size: 30px;
+  font-style: italic;
+}
+
+.solution {
+display: flex;
+gap:10px;
+margin-bottom:20px;
+}
+
+.reset{
+  padding: 15px 30px;
+  border-radius: 30px;
+  border:none;
+  font-size: 20px;
+  margin-top: 20px;
+  background-color: #123;
+  color: #fff;
+}
+
+.gameStat{
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+
+}
+
+.genrateButton{
+  padding: 15px 20px;
+  border-radius: 4px;
+  border:none;
+  background-color: #123;
+  color: #fff;
+  font-size: 20px;
+  margin:8px 4px;
+}
