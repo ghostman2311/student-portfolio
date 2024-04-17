@@ -1,13 +1,14 @@
 .projectContainer{
-    margin:50px 50px;
+    margin:120px 50px 50px 50px;
 }
 
-.projectContainer .image img{
+.projectContainer .projectImage img{
     width: 100%;
     border-radius: 7px;
     object-fit: cover;
     height: 623px;
 }
+
 
 .titleContainer{
     display: flex;
