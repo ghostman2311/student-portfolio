@@ -14,7 +14,7 @@ const Hangman = ({ maxWrong = 6, images}) => {
   };
 
   const guessedWord = () => {
-    return answer.split("").map(letter => (guessed.has(letter) ? letter : " _____"));
+    return answer.split("").map(letter => (guessed.has(letter) ? letter : "  _____  "));
   };
 
   const generateButtons = () => {
