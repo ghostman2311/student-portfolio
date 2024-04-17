@@ -11,8 +11,8 @@ import "./style.css";
 const Project = () => {
   return (
     <div className="projectContainer">
-      <div className="image">
-        <img src={eight} width="1284" alt="pic" />
+      <div className="projectImage">
+        <img src={eight} alt="pic" />
       </div>
       <div className="titleContainer">
         <h1>Collaborative Conversations</h1>
@@ -23,8 +23,8 @@ const Project = () => {
           interdum metus.
         </p>
       </div>
-      <div className="image">
-        <img src={ten} width="1284" height="623" alt="pic" />
+      <div className="projectImage">
+        <img src={ten} height="623" alt="pic" />
       </div>
       <div className="projectImagesContainer">
         <div className="project1">
