@@ -37,7 +37,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   background-color: #123;
-  /* background-color: #EAC3C3; */
+  z-index: 10 ;
   color: white;
   color: #000;
   height: 80px;

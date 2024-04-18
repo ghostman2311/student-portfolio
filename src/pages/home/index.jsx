@@ -46,7 +46,50 @@ const Homepage = () => {
               know to the next generation of designers.‍
             </span>
           </p>
-          <div className="about-right">Right Side</div>
+          <div className="about-right">
+            <h2>Your one stop shop for:</h2>
+            <div className="accordion">
+              <div className="tab">
+                <input type="radio" name="accordion-1" id="cb0" />
+                <label for="cb0" className="tab__label">
+                  Branding/Logo
+                </label>
+                <div className="tab__content">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Libero, perferendis. Ipsa nulla velit quas dicta iure
+                    reprehenderit eaque explicabo nisi!
+                  </p>
+                </div>
+              </div>
+              <div className="tab">
+                <input type="radio" name="accordion-1" id="cb1" />
+                <label for="cb1" className="tab__label">
+                  Packaging
+                </label>
+                <div className="tab__content">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Veniam maxime possimus neque deleniti. Cum recusandae aut
+                    quisquam praesentium, culpa porro!
+                  </p>
+                </div>
+              </div>
+              <div className="tab">
+                <input type="radio" name="accordion-1" id="cb2" />
+                <label for="cb2" className="tab__label">
+                  Websites
+                </label>
+                <div className="tab__content">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quaerat numquam ipsam et sequi accusantium quod architecto
+                    odit voluptates magni culpa.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="skills">
           <ul>
