@@ -27,7 +27,7 @@ const About = () => {
           </p>
         </div>
         <div className="image">
-          <img src={seventh} width="100%" alt='pic'/>
+          <img src={seventh} width="100%" alt="pic" />
         </div>
       </div>
 
@@ -42,7 +42,7 @@ const About = () => {
             <p>24.09.21</p>
             <div className="link">
               <span>See Now</span>
-              <img src={link} width="10" height="10" alt='link' />
+              <img src={link} width="10" height="10" alt="link" />
             </div>
           </div>
           <div className="blog">
@@ -53,7 +53,7 @@ const About = () => {
             <p>24.09.21</p>
             <div className="link">
               <span>See Now</span>
-              <img src={link} width="10" height="10" alt='link' />
+              <img src={link} width="10" height="10" alt="link" />
             </div>
           </div>
           <div className="blog">
@@ -64,7 +64,7 @@ const About = () => {
             <p>24.09.21</p>
             <div className="link">
               <span>See Now</span>
-              <img src={link} width="10" height="10" alt='link'/>
+              <img src={link} width="10" height="10" alt="link" />
             </div>
           </div>
         </div>

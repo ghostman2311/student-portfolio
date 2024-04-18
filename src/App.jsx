@@ -13,6 +13,7 @@ import step3 from "./assets/stepImages/3.jpg";
 import step4 from "./assets/stepImages/4.jpg";
 import step5 from "./assets/stepImages/5.jpg";
 import step6 from "./assets/stepImages/6.jpg";
+import Homepage from "./pages/home";
 
 function App() {
   return (
@@ -21,8 +22,9 @@ function App() {
         <Header />
         <main className="content">
           <Routes>
+            <Route path="/" element={<Homepage />}></Route>
             <Route
-              path="/"
+              path="/games/hangman"
               element={
                 <Hangman
                   maxWrong={6}
