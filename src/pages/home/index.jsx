@@ -50,7 +50,7 @@ const Homepage = () => {
             <h2>Your one stop shop for:</h2>
             <div className="accordion">
               <div className="tab">
-                <input type="radio" name="accordion-1" id="cb0" />
+                <input type="checkbox" name="accordion-1" id="cb0" />
                 <label for="cb0" className="tab__label">
                   Branding/Logo
                 </label>
@@ -63,7 +63,7 @@ const Homepage = () => {
                 </div>
               </div>
               <div className="tab">
-                <input type="radio" name="accordion-1" id="cb1" />
+                <input type="checkbox" name="accordion-1" id="cb1" />
                 <label for="cb1" className="tab__label">
                   Packaging
                 </label>
@@ -76,7 +76,7 @@ const Homepage = () => {
                 </div>
               </div>
               <div className="tab">
-                <input type="radio" name="accordion-1" id="cb2" />
+                <input type="checkbox" name="accordion-1" id="cb2" />
                 <label for="cb2" className="tab__label">
                   Websites
                 </label>
