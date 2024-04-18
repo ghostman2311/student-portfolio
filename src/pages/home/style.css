@@ -52,13 +52,19 @@
   #hero .hero-text {
     max-width: 773px;
     font-weight: 400;
-    font-size: 69px;
+    font-size: 50px;
     line-height: 79px;
   }
 
   #hero .landing {
     width: 565px;
     height: 626px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #hero .hero-text {
+    font-size: 69px;
   }
 }
 
@@ -223,49 +229,70 @@
       transform: rotate(90deg) translate(-0.25rem);
     }
   }
-  #about .skills {
+  #about .skills,
+  .zigzag-line {
     display: none;
   }
 }
 
 @media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 1024px) {
   #about .about-container {
     flex-direction: row;
     justify-content: space-between;
   }
-}
-
-@media only screen and (min-width: 1024px) {
   #about .skills {
     display: block;
+    margin-top: 20px;
     padding-top: 60px;
     padding-bottom: 60px;
+    position: relative;
+    overflow: hidden;
   }
 
   #about .skills ul {
+    position: absolute;
+    top: 0px;
+    left: 0px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: bannermove 20s linear infinite;
   }
 
   #about .skills ul li {
     font-weight: 400;
     font-size: 24px;
+    margin-left: 20px;
+    margin-right: 20px;
     line-height: 28px;
   }
 
+  @keyframes bannermove {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-50%, 0);
+    }
+  }
+
   #about .zigzag-line {
+    display: block;
     height: 10px; /* Adjust the height to fit your needs */
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><polyline points="0,10 5,0 10,10" fill="none" stroke="%23000000" stroke-width="1"/></svg>');
     background-size: 6px 10px; /* Adjust the size to change the density of the zigzag */
     position: relative;
+    margin-bottom: 64px;
   }
 
   #about .zigzag-line:before {
     content: "";
     position: absolute;
-    left: -125px;
-    width: 125px;
+    left: -144px;
+    width: 144px;
     bottom: 0;
     height: 100%;
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><polyline points="0,10 5,0 10,10" fill="none" stroke="%23000000" stroke-width="1"/></svg>');

@@ -27,7 +27,7 @@ const About = () => {
           </p>
         </div>
         <div className="image">
-          <img src={seventh} width="100%" alt="pic" />
+          <img src="/about.png" width="100%" alt="pic" />
         </div>
       </div>
 

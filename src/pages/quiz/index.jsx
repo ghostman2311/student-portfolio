@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Question from "./question";
-import qBank from "./questionsBank";
 import Score from "./score";
-import './style.css'
+import { qBank } from "../../utility";
+import "./style.css";
 
 const Quiz = () => {
   const [questionBank] = useState(qBank);
@@ -37,7 +37,6 @@ const Quiz = () => {
   };
 
   return (
-
     <div className="quizContainer">
       <h1 className="app-title">QUIZ APP</h1>
       {!quizEnd ? (
@@ -48,10 +47,13 @@ const Quiz = () => {
           onSubmit={handleFormSubmit}
         />
       ) : (
-        <Score score={score} onNextQuestion={handleNextQuestion} className="score" />
+        <Score
+          score={score}
+          onNextQuestion={handleNextQuestion}
+          className="score"
+        />
       )}
     </div>
-  
   );
 };
 

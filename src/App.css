@@ -84,8 +84,9 @@ a:hover {
 .footer-link {
   width: 50%;
   display: flex;
-  justify-content: end;
-  gap: 8px;
+  justify-content: flex-end;
+  gap: 1rem;
+  cursor: pointer;
 }
 
 .content {

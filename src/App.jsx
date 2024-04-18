@@ -1,10 +1,8 @@
 import About from "./pages/about";
 import Project from "./pages/project";
 import Join from "./components/join";
-import "./App.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Hangman from "./pages/hangman/Hangman";
 import step0 from "./assets/stepImages/0.jpg";
 import step1 from "./assets/stepImages/1.jpg";
@@ -15,6 +13,10 @@ import step5 from "./assets/stepImages/5.jpg";
 import step6 from "./assets/stepImages/6.jpg";
 import Homepage from "./pages/home";
 import Quiz from "./pages/quiz";
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+
 
 function App() {
   return (
@@ -23,7 +25,7 @@ function App() {
         <Header />
         <main className="content">
           <Routes>
-            <Route path="/" element={<Homepage />}></Route>
+            <Route path="/" element={<Homepage />} />
             <Route
               path="/games/hangman"
               element={
@@ -32,8 +34,8 @@ function App() {
                   images={[step0, step1, step2, step3, step4, step5, step6]}
                 />
               }
-            ></Route>
-            <Route path="/project" element={<Project/>}></Route>
+            />
+            <Route path="/project" element={<Project />} />
             <Route
               path="/about"
               element={
@@ -42,16 +44,8 @@ function App() {
                   <Join />
                 </>
               }
-            ></Route>
-             <Route
-              path="/games/quiz"
-              element={
-                <>
-                  <Quiz/> 
-                </>
-              }
-            ></Route>
-            
+            />
+            <Route path="/games/quiz" element={<Quiz />} />
           </Routes>
         </main>
         <Footer />

@@ -1,26 +1,30 @@
-import React, { useState } from 'react';
-import './Hangman.css';
-import { randomWord } from './Words.js';
+import React, { useState } from "react";
+import { randomWord } from "../../utility";
+import "./style.css";
 
-const Hangman = ({ maxWrong = 6, images}) => {
+const Hangman = ({ maxWrong = 6, images }) => {
   const [mistake, setMistake] = useState(0);
   const [guessed, setGuessed] = useState(new Set([]));
   const [answer, setAnswer] = useState(randomWord());
 
-  const handleGuess = e => {
+  const handleGuess = (e) => {
     let letter = e.target.value;
-    setGuessed(prevGuessed => new Set([...prevGuessed, letter]));
-    setMistake(prevMistake => prevMistake + (answer.includes(letter) ? 0 : 1));
+    setGuessed((prevGuessed) => new Set([...prevGuessed, letter]));
+    setMistake(
+      (prevMistake) => prevMistake + (answer.includes(letter) ? 0 : 1)
+    );
   };
 
   const guessedWord = () => {
-    return answer.split("").map(letter => (guessed.has(letter) ? letter : "  _____  "));
+    return answer
+      .split("")
+      .map((letter) => (guessed.has(letter) ? letter : "  _____  "));
   };
 
   const generateButtons = () => {
-    return "abcdefghjklmnopqrstuvwxyz".split("").map(letter => (
+    return "abcdefghjklmnopqrstuvwxyz".split("").map((letter) => (
       <button
-        className='genrateButton'
+        className="genrateButton"
         key={letter}
         value={letter}
         onClick={handleGuess}
@@ -51,22 +55,25 @@ const Hangman = ({ maxWrong = 6, images}) => {
 
   return (
     <div className="hangmanContainer">
-      <h1 className='text-center'>Hangman</h1>
-      <div className="float-right">Wrong Guesses: {mistake} of {maxWrong}</div>
+      <h1 className="text-center">Hangman</h1>
+      <div className="float-right">
+        Wrong Guesses: {mistake} of {maxWrong}
+      </div>
       <div className="text-center">
         <img src={images[mistake]} alt="" />
       </div>
       <div className="optionContainer">
-        <p className='heading'>Guess the Programming Language:</p>
-        <div className='solution'>
-          {!gameOver ? guessedWord() : <p className='heading'>{answer}</p>}
+        <p className="heading">Guess the Programming Language:</p>
+        <div className="solution">
+          {!gameOver ? guessedWord() : <p className="heading">{answer}</p>}
         </div>
-       <div className='gameStat'> {gameStat}</div>
-        <button className='reset' onClick={resetButton}>Reset</button>
+        <div className="gameStat"> {gameStat}</div>
+        <button className="reset" onClick={resetButton}>
+          Reset
+        </button>
       </div>
     </div>
   );
 };
-
 
 export default Hangman;

@@ -100,6 +100,27 @@ const Homepage = () => {
             <li>Illustrator</li>
             <li>Webflow</li>
             <li>Webflow</li>
+            <li>Illustrator</li>
+            <li>Webflow</li>
+            <li>Illustrator</li>
+            <li>Webflow</li>
+            <li>Illustrator</li>
+            <li>Webflow</li>
+            <li>Webflow</li>
+            <li>Illustrator</li>
+            <li>Webflow</li>
+            <li>Illustrator</li>
+            <li>Webflow</li>
+            <li>Illustrator</li>
+            <li>Webflow</li>
+            <li>Webflow</li>
+            <li>Illustrator</li>
+            <li>Webflow</li>
+            <li>Illustrator</li>
+            <li>Webflow</li>
+            <li>Illustrator</li>
+            <li>Webflow</li>
+            <li>Webflow</li>
           </ul>
         </div>
         <div className="zigzag-line" />
