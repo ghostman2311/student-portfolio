@@ -1,0 +1,56 @@
+.quizContainer {
+  width: 100%;
+  margin: 40px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 75vh;
+}
+
+.app-title {
+  font-size: 40px;
+
+}
+
+.questionId {
+  font-size: 30px;
+  margin-bottom: 20px   ;
+}
+
+.question {
+  font-size: 30px;
+  margin: 0;
+  text-align: center;
+}
+
+.submitButton {
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: none;
+  font-size: 20px;
+  background-color: #123;
+  color: #fff;
+}
+
+.options {
+  width: auto;
+  margin: 20px 0px;
+}
+
+.optionsChecked {
+  display: flex;
+  gap: 7px;
+  margin-bottom: 16px;
+}
+
+.label {
+  font-size: 20px;
+}
+
+.result{
+    font-size: 30px;
+}
+
+.result-score{
+    font-size: 25px;
+}

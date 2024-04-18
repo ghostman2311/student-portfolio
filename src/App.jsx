@@ -14,6 +14,7 @@ import step4 from "./assets/stepImages/4.jpg";
 import step5 from "./assets/stepImages/5.jpg";
 import step6 from "./assets/stepImages/6.jpg";
 import Homepage from "./pages/home";
+import Quiz from "./pages/quiz";
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function App() {
                 />
               }
             ></Route>
-            <Route path="/project" element={<Project />}></Route>
+            <Route path="/project" element={<Project/>}></Route>
             <Route
               path="/about"
               element={
@@ -42,6 +43,15 @@ function App() {
                 </>
               }
             ></Route>
+             <Route
+              path="/games/quiz"
+              element={
+                <>
+                  <Quiz/> 
+                </>
+              }
+            ></Route>
+            
           </Routes>
         </main>
         <Footer />
